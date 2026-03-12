@@ -1,0 +1,61 @@
+/* Background gradient */
+.stApp {
+background:#243b55(135deg,#141e30,#243b55);
+color:white;
+}
+
+/* Main title */
+.title {
+text-align:center;
+font-size:48px;
+font-weight:bold;
+color:#ffffff;
+margin-bottom:10px;
+animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtitle */
+.subtitle{
+text-align:center;
+font-size:18px;
+color:#d1d1d1;
+margin-bottom:30px;
+}
+
+/* Glass card */
+.card{
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:15px;
+backdrop-filter: blur(10px);
+box-shadow:0px 8px 20px rgba(0,0,0,0.4);
+margin-bottom:20px;
+}
+
+/* Button style */
+.stButton>button{
+background: linear-gradient(90deg,#ff512f,#dd2476);
+color:white;
+border:none;
+border-radius:10px;
+padding:12px 25px;
+font-size:18px;
+transition:0.3s;
+}
+
+.stButton>button:hover{
+transform:scale(1.05);
+background: linear-gradient(90deg,#dd2476,#ff512f);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"]{
+background:linear-gradient(180deg,#232526,#414345);
+color:white;
+}
+
+/* Animation */
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
